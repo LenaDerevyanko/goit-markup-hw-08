@@ -759,10 +759,16 @@ section {
     display: none;
   }
 }
+.mobile__close-menu:hover, .mobile__close-menu:focus {
+  fill: var(--accent-color);
+}
 @media (min-width: 768px) {
   .mobile__close-menu {
     display: none;
   }
+}
+.mobile__close-icon:hover, .mobile__close-icon:focus {
+  fill: var(--accent-color);
 }
 .mobile__open-icon {
   display: -webkit-box;

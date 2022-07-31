@@ -205,6 +205,10 @@
             @media (min-width: 768px) {
                 display: none;
             }
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
     }
 
     &__close-menu {
@@ -212,7 +216,12 @@
             display: none;
         }
     }
-
+    &__close-icon {
+        &:hover,
+        &:focus {
+                fill: var(--accent-color);
+            }
+    }
 
  &__open-icon {
     display: flex;
