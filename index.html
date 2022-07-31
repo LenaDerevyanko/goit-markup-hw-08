@@ -61,10 +61,11 @@
                         <li class="mobile__item"><a class="mobile__link" href="#">Контакты</a></li>
                     </ul>
                     <ul class="mobile__list">
+                        <li class="mobile__item"><a href="tel:+380961111111" class="mobile__tel">+38 096 111 11 11</a>
+                        </li>
+
                         <li class="mobile__item">
                             <a href="mailto:info@devstudio.com" class="mobile__mail">info@devstudio.com</a>
-                        </li>
-                        <li class="mobile-nav__item"><a href="tel:+380961111111" class="mobile__tel">+38 096 111 11 11</a>
                         </li>
                     </ul>
                     <ul class="mobile__social">
@@ -161,7 +162,7 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img class="team__img"  src="./images/photo3.jpg" alt="Игорь Демьяненко">
+                        <img class="team__img" srcset="./images/igor.jpg, ./images/igor@2x.jpg 2x" src="./images/photo3.jpg" alt="Игорь Демьяненко">
                         <div class="member">
                         <h3 class="member__name">Игорь Демьяненко</h3>
                         <p class="member__prof">Product Designer</p>
@@ -197,7 +198,7 @@
                     </ul>
                     </div>       
                     <li class="team__item">
-                        <img class="team__img" src="./images/photo4.jpg" alt="Ольга Репина">
+                        <img class="team__img" srcset="./images/olga.jpg, ./images/olga@2x.jpg 2x" src="./images/photo4.jpg" alt="Ольга Репина">
                         <div class="member">
                         <h3 class="member__name">Ольга Репина</h3>
                         <p class="member__prof">Frontend Developer</p>
@@ -234,7 +235,7 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/photo5.jpg" alt="Николай Тарасов">
+                        <img class="team__img" srcset="./images/nik.jpg, ./images/nik@2x.jpg 2x" src="./images/photo5.jpg" alt="Николай Тарасов">
                         <div class="member">
                         <h3 class="member__name">Николай Тарасов</h3>
                         <p class="member__prof">Marketing</p>
@@ -271,7 +272,7 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/photo6.jpg" alt="Михаил Ермаков">
+                        <img class="team__img" srcset="./images/mih.jpg, ./images/mih@2x.jpg 2x" src="./images/photo6.jpg" alt="Михаил Ермаков">
                         <div class="member">
                         <h3 class="member__name">Михаил Ермаков</h3>
                         <p class="member__prof">UI Designer</p>
@@ -365,53 +366,57 @@
     <!-- footer -->
     <footer class="footer">
         <div class="footer__container container">
-            <div class="footer-address ">
-                <a href="./index.html" class="footer__logo">Web<span class="footer__logo--accent">Studio</span></a>
-                <address>
-                    <ul class="footer-address__list list">
-                        <li class="footer-address__item"><a class="footer-address__address" href="https://bit.ly/3pXMvUd" target="_blank"
-                                rel="noopener noreferrer">г. Киев,
-                                пр-т Леси
-                                Украинки, 26</a></li>
-                        <li class="footer-address__item"><a href="mailto:info@devstudio.com"
-                                class="footer-address__mail">info@devstudio.com</a></li>
-                        <li class="footer-address__item"><a href="tel:+380961111111" class="footer-address__tel">+38 096 111 11 11</a></li>
+            <div class="footer__tablet-menu">
+                <div class="footer-address ">
+                    <a href="./index.html" class="footer__logo">Web<span class="footer__logo--accent">Studio</span></a>
+                    <address>
+                        <ul class="footer-address__list list">
+                            <li class="footer-address__item"><a class="footer-address__address" href="https://bit.ly/3pXMvUd"
+                                    target="_blank" rel="noopener noreferrer">г. Киев,
+                                    пр-т Леси
+                                    Украинки, 26</a></li>
+                            <li class="footer-address__item"><a href="mailto:info@devstudio.com"
+                                    class="footer-address__mail">info@devstudio.com</a></li>
+                            <li class="footer-address__item"><a href="tel:+380961111111" class="footer-address__tel">+38 096 111 11
+                                    11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="social-network">
+                    <h3 class="social-network__title">присоединяйтесь</h3>
+                    <ul class="social-network__list">
+                        <li class="social-network__item">
+                            <a href="#" class="social-network__link">
+                                <svg class="social-network__icon" width="20px" height="20px" aria-label="link instagram">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-network__item">
+                            <a href="#" class="social-network__link">
+                                <svg class="social-network__icon" width="20px" height="20px" aria-label="link twitter">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-network__item">
+                            <a href="#" class="social-network__link">
+                                <svg class="social-network__icon" width="20px" height="20px" aria-label="link facebook">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-network__item">
+                            <a href="#" class="social-network__link">
+                                <svg class="social-network__icon" width="20px" height="20px" aria-label="link linkedin">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </address>
+                </div>
             </div>
-            <div class="social-network">
-                <h3 class="social-network__title">присоединяйтесь</h3>
-                <ul class="social-network__list">
-                    <li class="social-network__item">
-                        <a href="#" class="social-network__link">
-                            <svg class="social-network__icon" width="20px" height="20px" aria-label="link instagram">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-network__item">
-                        <a href="#" class="social-network__link">
-                            <svg class="social-network__icon" width="20px" height="20px" aria-label="link twitter">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-network__item">
-                        <a href="#" class="social-network__link">
-                            <svg class="social-network__icon" width="20px" height="20px" aria-label="link facebook">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-network__item">
-                        <a href="#" class="social-network__link">
-                            <svg class="social-network__icon" width="20px" height="20px" aria-label="link linkedin">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            
             <div class="mailsend">
                 <h3 class="mailsend__title">Подпишитесь на рассылку</h3>
                 <form class="mailsend__form" name="signup_form" autocomplete="on" novalidate>

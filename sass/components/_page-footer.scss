@@ -3,9 +3,9 @@
     padding-bottom: 60px;
     padding-top: 60px;
     background-color: var(--third-background-color);
-}
 
-.footer__container {
+
+&__container {
     @media screen and(min-width: 1200px) {
             display: flex;
             align-items: baseline;
@@ -13,8 +13,25 @@
             text-align: start;
         }
 }
+
+&__tablet-menu {
+@media screen and(min-width: 768px) {
+            display: flex;
+
+            justify-content: space-around;
+            margin-bottom: 60px;
+        }
+        // @media screen and(min-width: 768px) {
+        //     display: flex;
+        //             justify-content: space-around;
+        //         }
+
+}
+}
 .footer-address {
     text-align: center;
+
+   
 
     @media screen and(min-width: 1200px) {
             text-align: start;
@@ -104,6 +121,10 @@
         padding-bottom: 0;
         text-align: start;
     }
+
+        @media screen and(min-width: 768px) {
+            margin: 0;
+        }
 
     &__title {
         margin-left: 70px;

@@ -1,51 +1,42 @@
 .hero {
-        &__container {
-    // margin-left: auto;
-    // margin-right: auto;
-    padding-top: 118px;
-    padding-bottom: 118px;
-    margin-top: 0;
-    background-color: var(--third-background-color);
-    background-image: linear-gradient(to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),
-    url(../images/Img1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    &__section {
+        position: relative;
+        padding: 0;
 
-    @media screen and(min-width: 480px) {
-            background-image: linear-gradient(to right,
-                        rgba(47, 48, 58, 0.4),
-                        rgba(47, 48, 58, 0.4)),
-                    url(../images/background.jpg);
-        
-    }
-
-    @media screen and(min-width: 768px) {
+        padding-top: 118px;
+            padding-bottom: 118px;
+            margin-top: 0;
+            background-color: var(--third-background-color);
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(../images/background@2x.jpg);
-    
-        }
+                url(../images/headerimg-mobile.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
 
-         @media screen and(min-width: 1200px) {
-            padding-top: 200px;
-            padding-bottom: 200px;
-            max-width: 1600px;
-            height: 600px;
+            @media screen and(min-width: 768px) {
+                    background-image: linear-gradient(to right,
+                            rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)),
+                        url(../images/headerimg-tablet.jpg);
+            
+                }
+            
+                @media screen and(min-width: 1200px) {
+                    padding-top: 200px;
+                    padding-bottom: 200px;
+                    max-width: 1600px;
+                    height: 600px;
+            
+                    background-image: linear-gradient(to right,
+                            rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)),
+                        url(../images/headerimg-desktop.jpg);
+            
+                }
 
-            background-image: linear-gradient(to right,
-                        rgba(47, 48, 58, 0.4),
-                        rgba(47, 48, 58, 0.4)),
-                    url(../images/background@3x.jpg);
-
-        }
-}
-    &__section {
-        position: relative;
-    padding: 0;
+   
 }
     &__title {
     margin-top: 0;
@@ -86,3 +77,4 @@
     
 }
 }
+

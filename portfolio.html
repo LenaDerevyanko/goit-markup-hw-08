@@ -16,24 +16,24 @@
     <!-- Шапка сайта -->
     <header class="header">
         <div class="header__container container">
-            <a href="./index.html" class="logo header__logo">Web<span class="header__logo--accent">Studio</span></a>
-    
             <nav class="header__menu">
+                <a href="./index.html" class="logo header__logo">Web<span class="header__logo--accent">Studio</span></a>
+    
                 <ul class="header__list">
-                    <li class="header__item"><a class="header__link current" href="./index.html">Студия</a></li>
-                    <li class="header__item"><a class="header__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="header__item"><a class="header__link" href="./index.html">Студия</a></li>
+                    <li class="header__item"><a class="header__link current" href="./portfolio.html">Портфолио</a></li>
                     <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
                 </ul>
             </nav>
             <address class="header__address">
                 <ul class="header__list list-header">
-                    <li class="header__item">
+                    <li class="header__item item-header">
                         <a href="mailto:info@devstudio.com" class="header__mail mail-header">
                             <svg class="header__icon" width="16px" height="12px" aria-hidden="true">
                                 <use href="./images/icons.svg#icon-mail"></use>
                             </svg>info@devstudio.com</a>
                     </li>
-                    <li class="header-nav__item"><a href="tel:+380961111111" class="header__tel">
+                    <li class="header__item item-header"><a href="tel:+380961111111" class="header__tel">
                             <svg class="header__icon" width="10px" height="16px" aria-hidden="true">
                                 <use href="./images/icons.svg#icon-phone"></use>
                             </svg>+38 096 111 11 11</a></li>
@@ -48,7 +48,35 @@
         </div>
     </header>
     <main>
-        <section class="section-portfolio">
+
+        
+        <section class="portfolio__section">
+                    <nav class="mobile__menu is-hidden" data-mobile-menu>
+                        <button class="mobile__close-menu" type="button" data-mobile-menu-close>
+                            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                                <use class="mobile__close-icon" href="./images/icons.svg#icon-close2"></use>
+                            </svg>
+                        </button>
+                        <ul class="mobile__list">
+                            <li class="mobile__item"><a class="mobile__link current" href="./index.html">Студия</a></li>
+                            <li class="mobile__item"><a class="mobile__link" href="./portfolio.html">Портфолио</a></li>
+                            <li class="mobile__item"><a class="mobile__link" href="#">Контакты</a></li>
+                        </ul>
+                        <ul class="mobile__list">
+                            <li class="mobile__item"><a href="tel:+380961111111" class="mobile__tel">+38 096 111 11 11</a>
+                            </li>
+                    
+                            <li class="mobile__item">
+                                <a href="mailto:info@devstudio.com" class="mobile__mail">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="mobile__social">
+                            <li class="mobile__social-item"><a href="Instagram" class="mobile__social-link ">Instagram</a></li>
+                            <li class="mobile__social-item"><a href="Twitter" class="mobile__social-link">Twitter</a></li>
+                            <li class="mobile__social-item"><a href="Facebook" class="mobile__social-link">Facebook</a></li>
+                            <li class="mobile__social-item"><a href="LinkedIn" class="mobile__social-link">LinkedIn</a></li>
+                        </ul>
+                    </nav>
             <div class="portfolio__container container">
                 <h1 class="visually-hidden">Список радиокнопок</h1>
                 <ul class="control__radio">
@@ -72,7 +100,7 @@
                     <li class="gallery__item">
                         <a href="#" class="gallery__link">
                             <div class="gallery__overlay">
-                                <img class="gallery__img" src="./images/note1.jpg" alt="ноутбук с портфолио"
+                                <img class="gallery__img" srcset="./images/note1a.jpg, ./images/note1a@2x.jpg 2x" src="./images/note1.jpg" alt="ноутбук с портфолио"
                                     width="370">
                                 <span class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
@@ -89,7 +117,7 @@
                     <li class="gallery__item">
                         <a href="#" class="gallery__link">
                             <div class="gallery__overlay">
-                                <img class="gallery__img" src="./images/basketball.jpg" alt="баскетбол" width="370">
+                                <img class="gallery__img" srcset="./images/basket.jpg, ./images/basket@2x.jpg 2x" src="./images/basketball.jpg" alt="баскетбол" width="370">
                                 <span class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                                     Все это позволит посетителю
@@ -105,7 +133,7 @@
                     <li class="gallery__item">
                         <a href="#" class="gallery__link">
                             <div class="gallery__overlay">
-                                <img class="gallery__img" src="./images/seafood.jpg" alt="логотип рыбного ресторана"
+                                <img class="gallery__img" srcset="./images/sea.jpg, ./images/sea@2x.jpg 2x" src="./images/seafood.jpg" alt="логотип рыбного ресторана"
                                     width="370">
                                 <span class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
@@ -122,7 +150,7 @@
                     <li class="gallery__item">
                         <a href="#" class="gallery__link">
                             <div class="gallery__overlay">
-                                <img class="gallery__img" src="./images/headphones.jpg" alt="наушники" width="370">
+                                <img class="gallery__img" srcset="./images/headphon.jpg, ./images/headphon@2x.jpg 2x" src="./images/headphones.jpg" alt="наушники" width="370">
                                 <span class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                                     Все это позволит посетителю
@@ -138,7 +166,7 @@
                     <li class="gallery__item">
                         <a href="#" class="gallery__link">
                             <div class="gallery__overlay">
-                                <img class="gallery__img" src="./images/box.jpg" alt="коробка" width="370">
+                                <img class="gallery__img" srcset="./images/boxes.jpg, ./images/boxes@2x.jpg 2x" src="./images/box.jpg" alt="коробка" width="370">
                                 <span class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                                     Все это позволит посетителю
@@ -154,7 +182,7 @@
                     <li class="gallery__item">
                         <a href="#" class="gallery__link">
                             <div class="gallery__overlay">
-                                <img class="gallery__img" src="./images/monitor.jpg" alt="монитор" width="370">
+                                <img class="gallery__img" srcset="./images/comp.jpg, ./images/comp@2x.jpg 2x" src="./images/monitor.jpg" alt="монитор" width="370">
                                 <span class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                                     Все это позволит посетителю
@@ -170,7 +198,7 @@
                     <li class="gallery__item">
                         <a href="#" class="gallery__link">
                             <div class="gallery__overlay">
-                                <img class="gallery__img" src="./images/press.jpg" alt="журнал" width="370">
+                                <img class="gallery__img" srcset="./images/magazine.jpg, ./images/magazine@2x.jpg 2x" src="./images/press.jpg" alt="журнал" width="370">
                                 <span class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                                     Все это позволит посетителю
@@ -186,7 +214,7 @@
                     <li class="gallery__item">
                         <a href="#" class="gallery__link">
                             <div class="gallery__overlay">
-                                <img class="gallery__img" src="./images/target.jpg" alt="таргета" width="370">
+                                <img class="gallery__img" srcset="./images/label.jpg, ./images/label@2x.jpg 2x" src="./images/target.jpg" alt="таргета" width="370">
                                 <span class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                                     Все это позволит посетителю
@@ -202,7 +230,7 @@
                     <li class="gallery__item">
                         <a href="#" class="gallery__link">
                             <div class="gallery__overlay">
-                                <img class="gallery__img" src="./images/note2.jpg" alt="работа на" width="370">
+                                <img class="gallery__img" srcset="./images/notebook.jpg, ./images/notebook@2x.jpg 2x" src="./images/note2.jpg" alt="работа на" width="370">
                                 <span class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                                     Все это позволит посетителю
@@ -224,54 +252,58 @@
     <!-- footer -->
     <footer class="footer">
         <div class="footer__container container">
-            <div class="footer-address ">
-                <a href="./index.html" class="footer__logo">Web<span class="footer__logo--accent">Studio</span></a>
-                <address>
-                    <ul class="footer-address__list list">
-                        <li class="footer-address__item"><a class="footer-address__address" href="https://bit.ly/3pXMvUd"
-                                target="_blank" rel="noopener noreferrer">г. Киев,
-                                пр-т Леси
-                                Украинки, 26</a></li>
-                        <li class="footer-address__item"><a href="mailto:info@devstudio.com"
-                                class="footer-address__mail">info@devstudio.com</a></li>
-                        <li class="footer-address__item"><a href="tel:+380961111111" class="footer-address__tel">+38 096 111
-                                11 11</a></li>
+            <div class="footer__tablet-menu">
+                <div class="footer-address ">
+                    <a href="./index.html" class="footer__logo">Web<span class="footer__logo--accent">Studio</span></a>
+                    <address>
+                        <ul class="footer-address__list list">
+                            <li class="footer-address__item"><a class="footer-address__address"
+                                    href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">г. Киев,
+                                    пр-т Леси
+                                    Украинки, 26</a></li>
+                            <li class="footer-address__item"><a href="mailto:info@devstudio.com"
+                                    class="footer-address__mail">info@devstudio.com</a></li>
+                            <li class="footer-address__item"><a href="tel:+380961111111" class="footer-address__tel">+38 096
+                                    111 11
+                                    11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="social-network">
+                    <h3 class="social-network__title">присоединяйтесь</h3>
+                    <ul class="social-network__list">
+                        <li class="social-network__item">
+                            <a href="#" class="social-network__link">
+                                <svg class="social-network__icon" width="20px" height="20px" aria-label="link instagram">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-network__item">
+                            <a href="#" class="social-network__link">
+                                <svg class="social-network__icon" width="20px" height="20px" aria-label="link twitter">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-network__item">
+                            <a href="#" class="social-network__link">
+                                <svg class="social-network__icon" width="20px" height="20px" aria-label="link facebook">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-network__item">
+                            <a href="#" class="social-network__link">
+                                <svg class="social-network__icon" width="20px" height="20px" aria-label="link linkedin">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </address>
+                </div>
             </div>
-            <div class="social-network">
-                <h3 class="social-network__title">присоединяйтесь</h3>
-                <ul class="social-network__list">
-                    <li class="social-network__item">
-                        <a href="#" class="social-network__link">
-                            <svg class="social-network__icon" width="20px" height="20px" aria-label="link instagram">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-network__item">
-                        <a href="#" class="social-network__link">
-                            <svg class="social-network__icon" width="20px" height="20px" aria-label="link twitter">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-network__item">
-                        <a href="#" class="social-network__link">
-                            <svg class="social-network__icon" width="20px" height="20px" aria-label="link facebook">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-network__item">
-                        <a href="#" class="social-network__link">
-                            <svg class="social-network__icon" width="20px" height="20px" aria-label="link linkedin">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    
             <div class="mailsend">
                 <h3 class="mailsend__title">Подпишитесь на рассылку</h3>
                 <form class="mailsend__form" name="signup_form" autocomplete="on" novalidate>
@@ -289,6 +321,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
