@@ -1,0 +1,88 @@
+.hero {
+        &__container {
+    // margin-left: auto;
+    // margin-right: auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    margin-top: 0;
+    background-color: var(--third-background-color);
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/Img1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and(min-width: 480px) {
+            background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../images/background.jpg);
+        
+    }
+
+    @media screen and(min-width: 768px) {
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/background@2x.jpg);
+    
+        }
+
+         @media screen and(min-width: 1200px) {
+            padding-top: 200px;
+            padding-bottom: 200px;
+            max-width: 1600px;
+            height: 600px;
+
+            background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../images/background@3x.jpg);
+
+        }
+}
+    &__section {
+        position: relative;
+    padding: 0;
+}
+    &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+
+    color: var(--third-text-color);
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (min-width: 768px) {
+            font-size: 44px;
+            line-height: 1.36;
+            letter-spacing: 0.06em;
+        }
+}
+
+    &__button {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 10px 32px;
+    min-width: 200px;
+    min-height: 50px;
+    border-radius: 4px ;
+    font-family: 'Roboto';
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--third-text-color);
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    border: none;
+    
+}
+}
