@@ -140,7 +140,7 @@
         }
 
     &__tel {
-            margin-top: 302px;
+            // margin-top: 302px;
             font-weight: 500;
                 font-size: 34px;
                 line-height: 1.18;
@@ -202,9 +202,9 @@
         padding: 0;
         transform: translateX(-50%);
         
-            @media (min-width: 768px) {
-                display: none;
-            }
+        @media (min-width: 768px) {
+            display: none;
+        }
         &:hover,
         &:focus {
             fill: var(--accent-color);
