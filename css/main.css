@@ -1107,10 +1107,14 @@ section {
   }
 }
 .team__list {
-  margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .team__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1120,6 +1124,8 @@ section {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1127,6 +1133,11 @@ section {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    margin-bottom: 0;
   }
 }
 .team__item {
@@ -1171,6 +1182,16 @@ section {
     margin-right: 30px;
   }
 }
+@media screen and (max-width: 320px) {
+  .team__item:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 320px) {
+  .team__item:last-child {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .team__item:last-child {
     margin-right: 0;
@@ -1194,10 +1215,16 @@ section {
 
 .member {
   background-color: var(--primary-background-color);
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 24px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 1200px) {
+  .member {
+    padding: 30px 0;
+  }
 }
 .member__name {
   margin-bottom: 10px;
@@ -1275,58 +1302,64 @@ section {
   background-color: var(--primary-background-color);
 }
 .company__title {
-  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 1.17;
-  text-align: center;
+  font-size: 36px;
   color: var(--secondary-text-color);
-}
-@media screen and (min-width: 1200px) {
-  .company__title {
-    margin-bottom: 50px;
-    font-size: 36px;
-  }
+  line-height: 1.17;
+  line-height: 100%;
+  text-align: center;
+  margin-bottom: 50px;
 }
 .company__list {
-  margin: 0;
-  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 0;
+  margin: -15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 1200px) {
   .company__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-top: 0;
+    margin-bottom: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
-@media screen and (min-width: 320px) {
-  .company__item {
-    margin-right: 30px;
-    margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .company__item {
-    max-width: 170px;
-  }
-}
-.company__link {
-  display: inline-block;
-  border: 1px solid var(--icon-primary-fill);
-  border-radius: 4px;
-  background-color: var(--primary-background-color);
+.company__item {
+  margin-top: 0;
+  margin-right: 30px;
   padding: 0;
+  padding: 0;
+  width: 170px;
   height: 92px;
   cursor: pointer;
   -webkit-transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function), border 250ms var(--timing-function);
   transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function), border 250ms var(--timing-function);
 }
+@media screen and (min-width: 320px) {
+  .company__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company__item {
+    margin-right: 30px;
+  }
+}
 .company__link {
+  display: inline-block;
+  height: 92px;
+  margin-right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1336,6 +1369,9 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border: 1px solid var(--icon-primary-fill);
+  border-radius: 4px;
+  background-color: var(--primary-background-color);
 }
 .company__link:hover, .company__link:focus {
   border: 1px solid var(--accent-color);
@@ -1945,11 +1981,6 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.portfolio__section {
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .control__radio {
