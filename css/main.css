@@ -728,6 +728,9 @@ section {
   padding-left: 10px;
 }
 .mobile__open-menu {
+  position: fixed;
+  top: 10px;
+  right: 10px;
   width: 40px;
   height: 40px;
   background: none;
@@ -741,7 +744,9 @@ section {
   }
 }
 .mobile__close-menu {
-  position: absolute;
+  position: fixed;
+  top: 10px;
+  right: 10px;
   width: 40px;
   height: 40px;
   top: 10px;
@@ -826,9 +831,12 @@ section {
   letter-spacing: 0.06em;
   color: var(--third-text-color);
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
@@ -1332,23 +1340,11 @@ section {
   .company__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-}
-.company__item {
-  margin-top: 0;
-  margin-right: 30px;
-  padding: 0;
-  padding: 0;
-  width: 170px;
-  height: 92px;
-  cursor: pointer;
-  -webkit-transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function), border 250ms var(--timing-function);
-  transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function), border 250ms var(--timing-function);
 }
 @media screen and (min-width: 320px) {
   .company__item {
@@ -1366,9 +1362,18 @@ section {
 }
 @media screen and (min-width: 1200px) {
   .company__item {
+    margin: 0;
     margin-right: 30px;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company__item:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company__item:first-child {
+    margin-left: 0px;
   }
 }
 .company__link {
@@ -1387,6 +1392,14 @@ section {
   border: 1px solid var(--icon-primary-fill);
   border-radius: 4px;
   background-color: var(--primary-background-color);
+  cursor: pointer;
+  -webkit-transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function), border 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function), border 250ms var(--timing-function);
+}
+@media screen and (min-width: 1200px) {
+  .company__link {
+    width: 170px;
+  }
 }
 .company__link:hover, .company__link:focus {
   border: 1px solid var(--accent-color);
@@ -1850,12 +1863,17 @@ section {
   text-align: center;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   padding-top: 0;
   padding: 0;
   margin: 0;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 .modal__form-field {
   margin-bottom: 10px;
