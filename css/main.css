@@ -1303,12 +1303,18 @@ section {
 }
 .company__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   color: var(--secondary-text-color);
   line-height: 1.17;
   line-height: 100%;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .company__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 .company__list {
   display: -webkit-box;
@@ -1351,9 +1357,18 @@ section {
     margin: 15px;
   }
 }
+@media screen and (min-width: 768px) {
+  .company__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .company__item {
     margin-right: 30px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 .company__link {
