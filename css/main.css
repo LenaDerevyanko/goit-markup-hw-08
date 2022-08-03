@@ -681,6 +681,7 @@ section {
   }
 }
 .mobile__tel {
+  margin-top: auto;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
@@ -730,7 +731,7 @@ section {
 .mobile__open-menu {
   position: fixed;
   top: 10px;
-  right: 10px;
+  right: 15px;
   width: 40px;
   height: 40px;
   background: none;
@@ -745,12 +746,12 @@ section {
 }
 .mobile__close-menu {
   position: fixed;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
   width: 40px;
   height: 40px;
   top: 10px;
-  right: 0;
+  right: 10px;
   background: none;
   border: none;
   cursor: pointer;
