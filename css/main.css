@@ -729,9 +729,8 @@ section {
   padding-left: 10px;
 }
 .mobile__open-menu {
-  position: fixed;
-  top: 10px;
-  right: 15px;
+  top: 5px;
+  right: 5px;
   width: 40px;
   height: 40px;
   background: none;
@@ -745,7 +744,7 @@ section {
   }
 }
 .mobile__close-menu {
-  position: fixed;
+  position: absolute;
   top: 5px;
   right: 5px;
   width: 40px;
