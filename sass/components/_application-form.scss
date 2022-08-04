@@ -176,6 +176,10 @@
 }
     &__text {
     padding-left: 7px;
+    font-size: 12px;
+    @media (min-width: 1200px) {
+        font-size: 14px;
+        }
 
 }
     &__link {

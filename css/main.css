@@ -749,8 +749,6 @@ section {
   right: 5px;
   width: 40px;
   height: 40px;
-  top: 10px;
-  right: 10px;
   background: none;
   border: none;
   cursor: pointer;
@@ -816,7 +814,6 @@ section {
   .hero__section {
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1600px;
     height: 600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/headerimg-desktop.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/headerimg-desktop.jpg);
@@ -1442,6 +1439,16 @@ section {
         justify-content: space-around;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer__tablet-menu {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__tablet-menu {
+    margin-bottom: 0;
+  }
+}
 
 .footer-address {
   text-align: center;
@@ -1951,6 +1958,12 @@ section {
 }
 .form-accept__text {
   padding-left: 7px;
+  font-size: 12px;
+}
+@media (min-width: 1200px) {
+  .form-accept__text {
+    font-size: 14px;
+  }
 }
 .form-accept__link {
   color: rgb(33, 150, 243);
@@ -2019,7 +2032,7 @@ section {
 .control__radio {
   padding: 0;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2041,6 +2054,12 @@ section {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .control__radio {
+    margin-bottom: 50px;
   }
 }
 .control__radio-item {
@@ -2135,6 +2154,11 @@ section {
 @media screen and (min-width: 768px) {
   .gallery__item:nth-child(2n) {
     margin-right: 0;
+  }
+}
+@media screen and (min-width: 320px) {
+  .gallery__item:last-child {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
